@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.status__action-bar .like, .status__action-bar .dislike, .status__action-bar .share-btn{
+    padding: 5px 67px;
+    border: 0;
+    color: #606984;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    transition: all .1s ease-in;
+    /* transition-property: background-color,color; */
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+    .fa.fa-share{
+        padding: 3px;
+    }
+
+    .status__action-bar .like:hover, .status__action-bar .dislike:hover, .status__action-bar .share-btn:hover{
+        background-color: #c0cdd9;
+    }
+
+    .like.selected, .dislike.selected{
+        color: #8c8dff;
+    }
+
+    .status__info .status__display-name{
+        text-decoration: none;
+        color: #606984;
+    }
+
+    .status__info .status__display-name .display-name__html:hover{
+        text-decoration: underline;
+    }
+
+    .share-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    opacity: 1;
+    pointer-events: auto;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    }
+
+    .share-modal.show{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .share-modal__container{
+        background-color: #282c37;
+        width: 75vh;
+        max-height: 80vh;
+        border-radius: 10px;
+    }
+
+    .header-share{
+        display: flex;
+        gap: 5px;
+        padding: 10px 10px;
+    }
+
+    .share-title{
+        display: flex;
+        padding: 9px 15px 9px 5px;
+        border-bottom: 1px solid rgb(133, 133, 133);
+        justify-content: flex-end;
+    }
+
+    .share-title button{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .share-title h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .share-modal input {
+        width: 100%;
+        background: none;
+        border: none;
+        font-size: 16px;
+        padding: 5px 10px;
+        caret-color: white;
+        color: #fff;
+    }
+
+    .share-modal input:focus{
+        outline: none;
+    }
+    .share-footer{
+        padding: 10px;
+    }
+    .footer-share__btn{
+        background-color: #595aff;
+        border: 10px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 22px;
+        overflow: hidden;
+        padding: 7px 18px;
+        text-align: center;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .footer-share__btn:hover{
+        background-color: #8c8eff;
+    }
+
+    

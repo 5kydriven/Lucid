@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../Icons/neural.png);
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* Navigation bar */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+#header h1{
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+li, a{
+    text-decoration: none;
+}
+
+nav{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav li a{
+    transition: all 0.3s ease 0s;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#login a{
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#login a:hover{
+    background-color: white;
+    border-radius: 20px;
+    color: grey;
+}
+
+#join a{
+    padding: 10px 20px;
+    border: 1px solid #1a7cf3;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+#join a:hover{
+    background-color: #1961b9;
+}
+
+
+/* body */
+#body{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    overflow: hidden;
+    justify-content: flex-start;
+    padding: 5em 0 0 10%;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.introtitle{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    line-height: 50px;
+    font-family: 'Roboto', 'Helvitica', sans-serif;
+    margin: 24px 0;
+}
+.intro{
+    color: #fffc;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 650;
+    max-width: 550px;
+    word-wrap: break-word;
+    margin: 0 0 16px;
+    font-family: sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#joinbtn{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #1a7cf3;
+    border: 1px solid #1a7cf3;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#joinbtn:hover{
+    background-color: #1961b9;
+}
+
+/* footer */
+#foot{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgba(255,255,255,.4);
+    width: 80%;
+    margin-top: 80px;
+}
+
+.item{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: calc(var(--vh, 1vh) * 3) 8px; 
+}
+
+.title{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.subtitle{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #ffffff80;
+    font-family: sans-serif;
+}
